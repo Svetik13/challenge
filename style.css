@@ -1,0 +1,8 @@
+
+p {font-family:'Open Sans', sans-serif;}
+.icon-fire{ font-size:2em; }
+.icon-fire{color:#ff4500;}
+body {
+    background-image: url("img/background.jpg");
+    background-repeat: repeat;
+}

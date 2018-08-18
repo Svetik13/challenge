@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <title>Kitten</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/mfglabs_iconset.css">
+
 </head>
 <body>
 
+
+<div class="container" style="background-color:#fff">
+    <div class="pageContent">
+        <div><i class="icon-fire"></i>
+         <img src="img/kittenss.png" width="70" alt="img">
+        </div>
+
+
+        <!-- Cat template -->
+        <template id="cat_template">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 cat">
+                <button type="button" class="btn btn-link modalknap" data-toggle="modal"  data-target="#myModal">
+                    <img src="" style="width:100%">
+                </button>
+
+                <div class="basic_info">
+                    <div class="info_navn"></div>
+                    <div class="info_more"></div>
+                    <button data-id="udskift mig" type="button" class="btn btn-default modalknap2" data-toggle="modal"  data-target="#myModal">Show more</button>
+                </div>
+
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modalBillede">
+                            <img src="" style="width:100%">
+                        </div>
+
+                        <div class="modal-body">
+                            <p>
+                                Navn: <span class="data_navn">Navn</span><br>
+                                Discription: <span class="data_langBeskrivelse">Long Discription</span><br>
+                                Info: <span class="data_more">More info</span><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </template>
+     <!-- Cat sektioner -->
+        <div class="row cats">
+            <div class="overskrift">
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script src="main.js"></script>
 
